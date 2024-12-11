@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/Product/registerProduct.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div th:insert="~{navbar :: navbar}"></div>
+
+
+<br><br><br><br>
+<h1 id="title">Edit Product</h1>
+<br><br>
+
+<form action="/editProduct2" method="post" class="forms">
+
+    <p><label for="id">Id:</label><br><input type="text" name="id" id="id" required></p>
+    <p><label for="name">Name:</label><br><input type="text" name="name" id="name" required></p>
+    <p><label for="price">Price:</label><br><input type="number" name="price" id="price" step="0.01" required></p>
+    <p><label for="description">Description:</label><br><input type="text" name="description" id="description" required></p>
+
+    <p><input type="submit" value="Send" id="send">
+
+</form>
+</body>
+</html>

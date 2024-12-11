@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/Warehouse/deleteWarehouse.css">
+    <title>Delete Product</title>
+</head>
+<body>
+
+<div th:insert="~{navbar :: navbar}"></div>
+
+
+<br><br><br><br>
+<h1 id="title">Delete Warehouse</h1>
+<br><br>
+
+<form action="/delete2Warehouse" method="post">
+    <p>
+        <label for="id">ID:</label><br>
+        <input type="number" name="id" id="id" required>
+    </p>
+    <p>
+        <input type="submit" value="send" class="send">
+    </p>
+</form>
+
+</body>
+</html>

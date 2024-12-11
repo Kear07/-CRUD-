@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <title>Products</title>
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <div th:insert="~{navbar :: navbar}"></div>
+
+
+    <br><br>
+
+    <!-- CONTEUDO -->
+    <container>
+        <div class="container">
+            
+            <a href="/listProducts" class="option">
+                <h1>View product</h1><br><p>Click here to view registered products</p>
+            </a>
+            
+            <a href="/addProduct1" class="option">
+                <h1>Add product</h1><br><p>Click here to register new products</p>
+            </a>
+
+            <a href="/editProduct1" class="option">
+                <h1>Edit product</h1><br><p>Click here to edit registered products</p>
+            </a>
+            
+            <a href="/delete1Product" class="option">
+                <h1>Delete product</h1><br><p>Click here to delete registred products</p>
+            </a>
+
+        </div>
+    </container>
+
+</body>
+</html>

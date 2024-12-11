@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/warehouse.css">
+    <title>Warehouse</title>
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <div th:insert="~{navbar :: navbar}"></div>
+
+
+    <br><br>
+
+    <!-- CONTEUDO -->
+    <container>
+        <div class="container">
+            
+            <a href="/listWarehouses" class="option">
+                <h1>View warehouse</h1><br><p>Click here to view registered warehouses</p>
+            </a>
+            
+            <a href="/addWarehouse1" class="option">
+                <h1>Add warehouse</h1><br><p>Click here to register new warehouses</p>
+            </a>
+
+            <a href="/editWarehouse1" class="option">
+                <h1>Edit warehouse</h1><br><p>Click here to edit registered warehouses</p>
+            </a>
+            
+            <a href="/delete1Warehouse" class="option">
+                <h1>Delete warehouse</h1><br><p>Click here to delete registred warehouses</p>
+            </a>
+
+        </div>
+    </container>
+
+</body>
+</html>

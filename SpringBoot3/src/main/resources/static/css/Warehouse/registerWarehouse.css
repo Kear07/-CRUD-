@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Parkinsans:wght@300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans";
+    text-decoration: none;
+    user-select: none;
+}
+
+.navbar{
+    background-color: #072905;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link{
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.link:hover{
+    transform: scale(1.1);
+}
+
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    /* height: 85vh; */
+}
+
+#send{
+    background-color: rgb(77, 204, 77);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+}
+input{
+    width: 200px;
+    padding-left: 2px;
+}
+
+#title{
+    font-size: 35px;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+_____________________ESTRUTURA DO PROJETO_____________________
+
+//CONFIGURATIONS
+--Nessa pasta fica conteudo de classes externas, um exemplo é a classe Random
+--Use apenas uma classe pra todas as bibliotecas
+
+//CONTROLLERS
+--Nessa pasta ficam os endpoints/caminhos, de cada tabela
+--Em cada endpoint temos o metodo, do que ele faz
+--Cada tabela no seu banco de dados precisa ter uma classe controller
+
+//DTOS
+--Nessa pasta ficam as validações dos dados de cada tabela
+--Cada tabela no seu banco de dados precisa ter uma classe Dto
+
+//MODELS
+--Nessa pasta ficam as estruturas de cada tabela do banco de dados
+--Cada tabela necessita de uma classe model
+
+//REPOSITORYS
+--Nessa pasta ficam as interfaces e implementações responsáveis pela comunicação com o banco de dados.
+--Cada tabela no seu banco de dados deve ter uma interface de repositório correspondente, que define os métodos para operações CRUD (Create, Read, Update, Delete).
+--Por padrão usando as dependencias de JPA, os metodos de CRUD (Create, Read, Update, Delete) já estão implementados, assim deixando livre se quiser metodos personalizados
+
+//SERVICES
+--Nessa pasta ficam os metodos onde o controller puxa e utiliza
+--Tambem puxa os metodos CRUD da pasta repositorys
+--Classe onde interage com os dados

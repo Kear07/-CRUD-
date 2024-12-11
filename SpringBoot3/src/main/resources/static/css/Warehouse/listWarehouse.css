@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+
+.table-container{
+    max-height: 350px;
+    width: 80%;
+    margin: auto;
+    overflow-y: auto;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    text-align: center;
+    vertical-align: middle;
+    border: 2px black solid;
+    background-color: #00cc73;
+    height: 50px;
+}
+
+td{
+    text-align: center;
+    vertical-align: middle;
+    background-color: ghostwhite;
+    border: 1px darkolivegreen solid;
+    height: 40px;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
